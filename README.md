@@ -5,4 +5,4 @@
 -->
 
 - 🔭 I’m currently working in IT in my own company
-- 🌱 I’m currently studying to become an electronics engineer
+- 🌱 I’m currently studying to become an electronics engineer at YRGO in Gothenburg, Sweden

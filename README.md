@@ -1,7 +1,7 @@
 # Edward Falk
 
 **Electronics engineer (embedded systems) · AI systems developer · IT consultant since 2005**
-Gothenburg, Sweden · [edwardfalk.se](https://edwardfalk.se) · [LinkedIn](https://www.linkedin.com/in/falkedward/) · edward@falkdata.se
+Gothenburg, Sweden · [edwardfalk.com](https://edwardfalk.com) · [LinkedIn](https://www.linkedin.com/in/falkedward/) · edward@falkdata.se
 
 I build systems where hardware, software and AI meet: a voice AI living inside a 1991 Macintosh,
 a wind-plant simulator for the Swedish power grid, and the self-hosted agent tooling I use to run

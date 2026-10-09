@@ -37,6 +37,25 @@ can read live traffic from a passive network tap. He can watch but never interfe
 - Built during my internship at EQ2 in Gothenburg with classmate
   [Felix Da Silva Gunnarsson](https://github.com/gunnarsson901)
 
+### 🏁 Yrgo Grand Prix: autonomous race cars
+**Arduino · C++ · PID control · I²C · Scrum** · *team project, finished third*
+
+Team Edison (classmates Felix Da Silva Gunnarsson, Santiago Bautista Barrera and me) built two
+self-driving cars for Yrgo's yearly autonomous-car race, working in two-week Scrum sprints. Our car
+SDA reached the final and finished third. As technical lead I worked mainly on the steering code and
+its tuning.
+
+- The kit's ultrasonic sensor on a servo was too slow and the glossy walls fooled it, so we switched to
+  three fixed VL53L0X laser distance sensors in CAD-designed, 3D-printed mounts
+- The sensors share one I²C bus, whose two lines gave the cars their names, SDA and SCL. Each sensor is
+  woken in turn through its shutdown pin and given its own address at boot
+- PD steering on the left–right wall distance, speed scaled by the distance ahead, automatic sensor
+  resets after dropouts, and IR start/stop as the race rules require
+- Crashes debugged from the serial log at the exact crash point, with a logic analyser and oscilloscope
+  on the sensor bus
+- In the final I retuned the steering minutes before the start, got it backwards, and watched the car
+  swing wide into the outer wall. Lesson learned: freeze the code before race day
+
 ### 🌬️ WindSim: wind plant and grid-balancing simulator
 **Python · energy systems · simulation** · *private for now*
 
@@ -78,14 +97,24 @@ line is written by AI agents working from a standing brief.
 **VHDL · Cyclone V · SPI** · [repo →](https://github.com/edwardfalk/digitalteknik-lab1-hvacc)
 
 An Arduino offloads 7-segment display driving to an FPGA over SPI, with and without
-metastability protection. Also from the degree: a digital guitar filter on FPGA, an autonomous
-Arduino car, and a servo-driven mechanical drum machine.
+metastability protection. Also from the degree: a multimeter on a PCB I designed in KiCad, then
+soldered, programmed and debugged; a digital guitar filter on FPGA; and, with Felix, a Raspberry Pi
+weather station on MQTT.
 
 ### 🎮 Cosmic Vibe
 **JavaScript · p5.js** · [play it →](https://edwardfalk.github.io/vibe/)
 
 A rhythm-driven space shooter, made as an experiment in how far AI coding can go without writing
 a line of code myself. The code, graphics and animation are all AI-generated.
+
+### 🥁 Servo drum machine
+**C · ATmega328P · timers · PWM · ADC** · *Embedded Systems 1, passed with distinction (VG)* · [watch it play →](https://edwardfalk.com/video/drum-machine.mp4)
+
+A classmate decided a drum machine was impossible with the hardware our course allowed. I took that as
+a challenge and started building a mechanical one the day before the presentation: two servos left over
+from the race car, on a frame of old Meccano, beating a cardboard-box bass drum and a paper-cup snare
+with a tinfoil head. Underneath it's register-level C on the Arduino's ATmega328P: hardware PWM drives
+the servos, a 1 ms timer interrupt keeps the beat, and a potentiometer sets the tempo.
 
 ---
 

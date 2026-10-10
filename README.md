@@ -53,8 +53,10 @@ its tuning.
   resets after dropouts, and IR start/stop as the race rules require
 - Crashes debugged from the serial log at the exact crash point, with a logic analyser and oscilloscope
   on the sensor bus
-- In the final I retuned the steering minutes before the start, got it backwards, and watched the car
-  swing wide into the outer wall. Lesson learned: freeze the code before race day
+- In the final I retuned the PID steering minutes before the start, got it backwards, and watched the
+  car swing wide into the outer wall. Still, I regret nothing. It was a calculated risk for a shot at
+  first place. We had already secured our grades, so we could afford to gamble, and the best car in
+  the race was clearly performing better than ours
 
 ### 🌬️ WindSim: wind plant and grid-balancing simulator
 **Python · energy systems · simulation** · *private for now*

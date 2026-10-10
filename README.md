@@ -102,14 +102,14 @@ A rhythm-driven space shooter, made as an experiment in how far AI coding can go
 a line of code myself. The code, graphics and animation are all AI-generated.
 
 ### 🧫 Conway's Game of Life on an FPGA
-**VHDL · Cyclone V · VGA · block RAM · GHDL** · *Digital Electronics course* · [watch the glider gun →](https://edwardfalk.com/video/game-of-life.mp4)
+**VHDL · Cyclone V · VGA · block RAM · GHDL** · *Digital Electronics course* · [watch the glider gun →](https://edwardfalk.com/video/game-of-life.mp4) · [repo →](https://github.com/edwardfalk/fpga-game-of-life)
 
 Conway's Game of Life in VHDL on a DE0-CV board, drawn on a VGA monitor: 80×60 cells at 60 Hz,
 double-buffered in block RAM. Switches pick one of eight classic patterns, the speed and the edge mode;
 buttons pause and step.
 
-Every module has a GHDL testbench. A read-timing off-by-one passed the blinker test, whose symmetry
-hides it, but made gliders drift sideways. The first grid design needed 169 % of the chip's logic;
+The core modules have GHDL testbenches. A read-timing off-by-one passed the blinker test, whose
+symmetry hides it, but made gliders drift sideways. The first grid design needed 169 % of the chip's logic;
 rewritten for block RAM, the whole design uses 4 %.
 
 ### 🥁 Servo drum machine

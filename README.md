@@ -49,7 +49,7 @@ its tuning.
   three fixed VL53L0X laser distance sensors in CAD-designed, 3D-printed mounts
 - The sensors share one I²C bus, whose two lines gave the cars their names, SDA and SCL. Each sensor is
   woken in turn through its shutdown pin and given its own address at boot
-- PD steering on the left–right wall distance, speed scaled by the distance ahead, automatic sensor
+- PID steering on the left–right wall distance, speed scaled by the distance ahead, automatic sensor
   resets after dropouts, and IR start/stop as the race rules require
 - Crashes debugged from the serial log at the exact crash point, with a logic analyser and oscilloscope
   on the sensor bus

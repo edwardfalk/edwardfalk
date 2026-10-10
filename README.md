@@ -95,19 +95,22 @@ thermals to stay up, and the landing is scored. The flight model is parameterise
 and air density so it can fly on other worlds. It's also my testbed for fully AI-generated code: every
 line is written by AI agents working from a standing brief.
 
-### 🔌 FPGA hardware acceleration
-**VHDL · Cyclone V · SPI** · [repo →](https://github.com/edwardfalk/digitalteknik-lab1-hvacc)
-
-An Arduino offloads 7-segment display driving to an FPGA over SPI, with and without
-metastability protection. Also from the degree: a multimeter on a PCB I designed in KiCad, then
-soldered, programmed and debugged; a digital guitar filter on FPGA; and, with Felix, a Raspberry Pi
-weather station on MQTT.
-
 ### 🎮 Cosmic Vibe
 **JavaScript · p5.js** · [play it →](https://edwardfalk.github.io/vibe/)
 
 A rhythm-driven space shooter, made as an experiment in how far AI coding can go without writing
 a line of code myself. The code, graphics and animation are all AI-generated.
+
+### 🧫 Conway's Game of Life on an FPGA
+**VHDL · Cyclone V · VGA · block RAM · GHDL** · *Digital Electronics course* · [watch the glider gun →](https://edwardfalk.com/video/game-of-life.mp4)
+
+Conway's Game of Life in VHDL on a DE0-CV board, drawn on a VGA monitor: 80×60 cells at 60 Hz,
+double-buffered in block RAM. Switches pick one of eight classic patterns, the speed and the edge mode;
+buttons pause and step.
+
+Every module has a GHDL testbench. A read-timing off-by-one passed the blinker test, whose symmetry
+hides it, but made gliders drift sideways. The first grid design needed 169 % of the chip's logic;
+rewritten for block RAM, the whole design uses 4 %.
 
 ### 🥁 Servo drum machine
 **C · ATmega328P · timers · PWM · ADC** · *Embedded Systems 1, passed with distinction (VG)* · [watch it play →](https://edwardfalk.com/video/drum-machine.mp4)
@@ -145,6 +148,10 @@ Built Project ScrLk and its degree-presentation demo.
 
 **Yrgo, Gothenburg**: Electronics Engineer, Embedded Systems (higher vocational, 2 years) · *2024–2026*
 Analog and digital electronics, VHDL/FPGA, embedded C/C++, signal processing, test automation, embedded Linux.
+Other degree projects: an Arduino that offloads 7-segment display driving to an FPGA
+[over SPI](https://github.com/edwardfalk/digitalteknik-lab1-hvacc); a multimeter on a PCB I designed in
+KiCad, then soldered, programmed and debugged; a digital guitar filter on FPGA; and, with Felix, a
+Raspberry Pi weather station on MQTT.
 
 Earlier university studies in informatics, databases, psychology, theoretical philosophy and business.
 
